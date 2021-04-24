@@ -1,0 +1,33 @@
+<p>search page is in progress</p>
+
+<div>
+    <table>
+        <thead>
+        <th>Year</th>
+        <th>Product</th>
+        <th>Series</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Location</th>
+        <th>Team Name</th>
+        <th>Slab</th>
+        </thead>
+        <tbody>
+        {{#each cards}}
+            <tr>
+                <td>{{year}}</td>
+                <td>{{product}}</td>
+                <td>{{series}}</td>
+                <td>{{firstName}}</td>
+                <td>{{lastName}}</td>
+                <td>{{location}}</td>
+                <td>{{teamName}}</td>
+                <td>{{slab}}</td>
+                <td>
+                    <button type="submit">Details</button>
+                </td>
+            </tr>
+        {{/each}}
+        </tbody>
+    </table>
+</div>
