@@ -37,6 +37,6 @@ Next Steps
   2. implement a feature to show the card's details
   3. implement a feature to update the sale
   4. implement a feature to delete the card
-
+  5. determine what to do with the search page (as noted in the challenge section)
 
 
