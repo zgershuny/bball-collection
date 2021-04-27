@@ -21,3 +21,22 @@ Next Steps
     A. render the total sales in the collection
   3. search page 
     A. render the search results
+    
+Week 2 - Due 4/27/2021
+Items Completed 
+  1. collection page - renders all cards in the collection
+  2. sales page - total sales in the collection
+  3. homes page
+  4. search page
+
+Challenges
+  1. UX - user experience design for search page- maybe combine it with the collection page
+
+Next Steps
+  1. implement a feature to update the card
+  2. implement a feature to show the card's details
+  3. implement a feature to update the sale
+  4. implement a feature to delete the card
+
+
+
