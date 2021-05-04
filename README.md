@@ -39,4 +39,22 @@ Next Steps
   4. implement a feature to delete the card
   5. determine what to do with the search page (as noted in the challenge section)
 
+Week 3 - Due 5/4/2021
+Items Completed
+  1. Render a page that shows the card's details
+  2. Render all the sales in the collection
+  3. Update the sale for the individual card
+  4. Delete the card
+  5. Determined that the search page functionality is almost identical to add a new card. 
+      Perhaps a same form can be designed with a button for the user to select to add or search
 
+Challenges
+  1. Cannot use one SQL query to update all card's details (as in updating multiple tables as once). 
+      Will need to implement multiple queries
+  2. Formatting is inconsistent on the card's details page. Will fix this at the end to beautify all pages
+
+Next Steps
+  1. Add a new card and its relevant information (and start working on search functionality here)
+  2. Continue to work on updating the card's details
+  3. Implement a feature to render slabs only or no slabs (collection/sales page)
+  4. Implement a feature to render only sold and unsold cards (collection/sales page)
