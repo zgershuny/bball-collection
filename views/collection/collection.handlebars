@@ -1,3 +1,5 @@
+<p>current collection in the database</p>
+
 <div>
     <table>
         <thead>
@@ -22,7 +24,10 @@
                     <td>{{teamName}}</td>
                     <td>{{slab}}</td>
                     <td>
-                        <button type="submit">Details</button>
+                        <form action="/" method="post">
+                            <input type="hidden" name="cardID" id="cardID" value="{{cardID}}">
+                            <button type="submit" formaction="/detailedInfo">Details</button>
+                        </form>
                     </td>
                 </tr>
             {{/each}}

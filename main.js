@@ -29,12 +29,13 @@ app.use(require('./routes/home'));
 
 // Collection
 app.use(require('./routes/collection/collection'));
+app.use(require('./routes/collection/detailedInfo'));
+app.use(require('./routes/collection/updateDetailedInfo'));
+app.use(require('./routes/collection/deleteCard'));
 
-// Sales
+// sales
 app.use(require('./routes/sales/sales'));
-
-// Search
-app.use(require('./routes/search/search'));
+app.use(require('./routes/sales/updateSale'));
 
 // 404 - No Page Error
 app.use(function(req, res){

@@ -14,7 +14,8 @@ router.get('/collection', function(req, res, next){
         "dim_player.p_fName AS 'firstName',\n" +
         "dim_player.p_lName AS 'lastName',\n" +
         "dim_team.location, dim_team.t_name AS 'teamName',\n" +
-        "IF(fact_card.slabID IS NULL, 'No', 'Yes') AS 'slab'\n" +
+        "IF(fact_card.slabID IS NULL, 'No', 'Yes') AS 'slab',\n" +
+        "fact_card.cardID\n" +
         "FROM fact_card\n" +
         "LEFT JOIN dim_series ON fact_card.seriesID=dim_series.seriesID\n" +
         "LEFT JOIN dim_brand ON dim_series.brandID=dim_brand.brandID\n" +

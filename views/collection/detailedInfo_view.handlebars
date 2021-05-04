@@ -1,0 +1,84 @@
+<p>all info about the card</p>
+
+<div>
+    <table>
+        <thead>
+            <th>Year</th>
+            <th>Product</th>
+            <th>Player</th>
+            <th>Team</th>
+        </thead>
+        <thead>
+            <th>Features</th>
+            <th>Numbered</th>
+            <th>Effects</th>
+        </thead>
+            <th>Grading Company</th>
+            <th>Slab Number</th>
+            <th>Overall Grade</th>
+            <th>Centering</th>
+            <th>Corners</th>
+            <th>Edges</th>
+            <th>Surface</th>
+            <th>Auto</th>
+        <br>
+            <th>Buy Price</th>
+            <th>Buy Fees</th>
+            <th>Buy Ship</th>
+            <th>Sell Price</th>
+            <th>Sell Fees</th>
+            <th>Sell Ship</th>
+        <br>
+            <th>Notes</th>
+        </thead>
+        <tbody>
+            {{#each card}}
+                <tr>
+                    <td>{{Year}}</td>
+                    <td>{{Product}}</td>
+                    <td>{{TeamName}}</td>
+                    <td>{{FullName}}</td>
+                </tr>
+        </tbody>
+        <tbody>
+                <tr>
+                    <td>{{featureID}}</td>
+                    <td>{{Numbered}}</td>
+                    <td>{{Effects}}</td>
+                </tr>
+        </tbody>
+                    <td>{{g_name}}</td>
+                    <td>{{slab_number}}</td>
+                    <td>{{Overall_Grade}}</td>
+                    <td>{{Centering}}</td>
+                    <td>{{Corners}}</td>
+                    <td>{{Edges}}</td>
+                    <td>{{Surface}}</td>
+                    <td>{{Auto}}</td>
+                <tr>
+                    <td>{{b_price}}</td>
+                    <td>{{b_fees}}</td>
+                    <td>{{b_ship}}</td>
+                    <td>{{s_price}}</td>
+                    <td>{{s_fees}}</td>
+                    <td>{{s_ship}}</td>
+                </tr>
+                <tr>
+                    <td>{{note}}</td>
+                </tr>
+                <tr>
+                    <td>
+                        <form action="/" method="post">
+                            <input type="hidden" name="cardID" id="cardID" value="{{cardID}}">
+                            <button type="submit" formaction="/detailedInfo_update">Update</button>
+                        </form>
+                        <form action="/" method="post">
+                            <input type="hidden" name="cardID" id="cardID" value="{{cardID}}">
+                            <button type="submit" formaction="/deleteCard">Delete</button>
+                        </form>
+                    </td>
+                </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>
