@@ -1,0 +1,55 @@
+<div>
+    <p>total gain/loss</p>
+    <tbody>
+    {{#each sale}}
+        <tr>
+            <td>{{ttl_sale}}</td>
+        </tr>
+    {{/each}}
+    </tbody>
+    <p>individual sales</p>
+    <thead>
+        <th>BOUGHT INFO</th>
+        <th>Date</th>
+        <th>Price</th>
+        <th>Fees</th>
+        <th>Shipping</th>
+        <th>SOLD INFO</th>
+        <th>Date</th>
+        <th>Price</th>
+        <th>Fees</th>
+        <th>Shipping</th>
+        <th>GAIN/LOSS</th>
+    </thead>
+    <tbody>
+    {{#each card_sale}}
+        <tr>
+            <td>blank</td>
+            <td>{{b_date}}</td>
+            <td>{{b_price}}</td>
+            <td>{{b_fees}}</td>
+            <td>{{b_ship}}</td>
+            <td>blank</td>
+            <td>{{s_date}}</td>
+            <td>{{s_price}}</td>
+            <td>{{s_fees}}</td>
+            <td>{{s_ship}}</td>
+            <td>{{sale}}</td>
+            <td>
+                <form action="/" method="post">
+                    <input type="hidden" name="b_date" id="b_date" value="{{b_date}}">
+                    <input type="hidden" name="b_price" id="b_price" value="{{b_price}}">
+                    <input type="hidden" name="b_fees" id="b_fees" value="{{b_fees}}">
+                    <input type="hidden" name="b_ship" id="b_ship" value="{{b_ship}}">
+                    <input type="hidden" name="s_date" id="s_date" value="{{s_date}}">
+                    <input type="hidden" name="s_price" id="s_price" value="{{s_price}}">
+                    <input type="hidden" name="s_fees" id="s_fees" value="{{s_fees}}">
+                    <input type="hidden" name="s_ship" id="s_ship" value="{{s_ship}}">
+                    <input type="hidden" name="saleID" id="saleID" value="{{saleID}}">
+                    <button type="submit" formaction="/updateSale">Update</button>
+                </form>
+            </td>
+        </tr>
+    {{/each}}
+    </tbody>
+</div>
