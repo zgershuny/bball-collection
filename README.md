@@ -58,3 +58,20 @@ Next Steps
   2. Continue to work on updating the card's details
   3. Implement a feature to render slabs only or no slabs (collection/sales page)
   4. Implement a feature to render only sold and unsold cards (collection/sales page)
+
+Week 4 - Due 5/10/2021
+
+Items Completed
+  1. Web page with form to add the card with prepopulated fields
+  2. Implemented update the card's details
+  3. display slabs or non slab cards (and both) for both collection and sales page
+
+Challenges
+  1. Implementing the script to update the card's details
+  2. Implement the script to add a new card, maybe modify the approach by breaking it down
+
+Next Steps
+  1. Finish implementation of adding a new card - decide how to do it
+  2. Implement to display players' and their cards (option for sold or unsold)
+  3. Implement to display teams' and their cards (option for sold and unsold)
+  4. Implement a feature to render only sold and unsold cards (collection/sales page) 
