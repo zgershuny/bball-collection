@@ -1,0 +1,45 @@
+<p>current collection in the database</p>
+<!-- options for slabs or no slabs -->
+<div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Slab Options</button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="/collection?slabsOnly=SlabsOnly">Only Slabs</a>
+        <a class="dropdown-item" href="/collection?noSlabs=NoSlabs">No Slabs</a>
+        <a class="dropdown-item" href="/collection">Both</a>
+    </div>
+
+</div>
+<div>
+    <table>
+        <thead>
+            <th>Year</th>
+            <th>Product</th>
+            <th>Series</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Location</th>
+            <th>Team Name</th>
+            <th>Slab</th>
+        </thead>
+        <tbody>
+            {{#each cards}}
+                <tr>
+                    <td>{{year}}</td>
+                    <td>{{product}}</td>
+                    <td>{{series}}</td>
+                    <td>{{firstName}}</td>
+                    <td>{{lastName}}</td>
+                    <td>{{location}}</td>
+                    <td>{{teamName}}</td>
+                    <td>{{slab}}</td>
+                    <td>
+                        <form action="/" method="post">
+                            <input type="hidden" name="cardID" id="cardID" value="{{cardID}}">
+                            <button type="submit" formaction="/detailedInfo">Details</button>
+                        </form>
+                    </td>
+                </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>

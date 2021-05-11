@@ -1,0 +1,160 @@
+<p>add a new card</p>
+
+
+<form action="/addCard_form" name="addCard_form" id="addCard_form" method="post">
+    <table>
+        <div class="form-group">
+            <label for="year">Year</label>
+            <input type="number" name="year" id="year" class="form-control" placeholder="2020">
+        </div>
+        <div class="form-group">
+            <label for="changeBrand">Select</label>
+            <select name="brandID" id="brandID">
+                <option value="none" selected disabled hidden> Brand </option>
+                {{#each brand}}
+                    <option value="{{brandID}}">{{b_name}}</option>
+                {{/each}}
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="changeSeries">Select</label>
+            <select name="seriesID" id="seriesID">
+                <option value="none" selected disabled hidden> Series </option>
+                {{#each series}}
+                    <option value="{{seriesID}}">{{s_name}}</option>
+                {{/each}}
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="changePlayer">Select</label>
+            <select name="playerID" id="playerID">
+                <option value="none" selected disabled hidden> Player </option>
+                {{#each player}}
+                    <option value="{{playerID}}">{{FullName}}</option>
+                {{/each}}
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="changeTeam">Select</label>
+            <select name="teamID" id="teamID">
+                <option value="none" selected disabled hidden> Team </option>
+                {{#each team}}
+                    <option value="{{teamID}}">{{TeamName}}</option>
+                {{/each}}
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="changeFeature">Select</label>
+            <select name="featureID" id="featureID">
+                <option value="none" selected disabled hidden> Features </option>
+                {{#each feature}}
+                    <option value="{{featureID}}">{{f_name}}</option>
+                {{/each}}
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="numbered">Numbered</label>
+            <input type="number" name="numbered" id="numbered" min="0" step="1" class="form-control" placeholder="7">
+        </div>
+
+        <div class="form-group">
+            <label for="out_of"> Out Of </label>
+            <input type="number" name="out_of" id="out_of" min="1" step="1" class="form-control" placeholder="10">
+        </div>
+        <div class="form-group">
+            <label for="changeParallel">Select</label>
+            <select name="parallelID" id="parallelID">
+                <option value="none" selected disabled hidden> Parallel </option>
+                {{#each parallel}}
+                    <option value="{{parallelID}}">{{p_name}}</option>
+                {{/each}}
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="changeEffect">Select</label>
+            <select name="effectID" id="effectID">
+                <option value="none" selected disabled hidden> Effect </option>
+                {{#each effect}}
+                    <option value="{{effectID}}">{{e_name}}</option>
+                {{/each}}
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="changeGrading">Select</label>
+            <select name="gradingID" id="gradingID">
+                <option value="none" selected disabled hidden> Grading Company </option>
+                {{#each grading}}
+                    <option value="{{gradingID}}">{{g_name}}</option>
+                {{/each}}
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="slab_number">Slab Number</label>
+            <input type="number" min="0" step="1" name="slab_number" id="slab_number" class="form-control" placeholder="77777777">
+        </div>
+        <div class="form-group">
+            <label for="Overall_Grade">Overall Grade</label>
+            <input type="number" min="0" step=".5" max="10" name="Overall_Grade" id="Overall_Grade" class="form-control" placeholder="10">
+        </div>
+        <div class="form-group">
+            <label for="Centering">Centering</label>
+            <input type="number" min="0" step=".5" max="10" name="Centering" id="Centering" class="form-control" placeholder="10">
+        </div>
+        <div class="form-group">
+            <label for="Corners">Corners</label>
+            <input type="number" min="0" step=".5" max="10" name="Corners" id="Corners" class="form-control" placeholder="10">
+        </div>
+        <div class="form-group">
+            <label for="Edges">Edges</label>
+            <input type="number" min="0" step=".5" max="10" name="Edges" id="Edges" class="form-control" placeholder="10">
+        </div>
+        <div class="form-group">
+            <label for="Surface">Surface</label>
+            <input type="number" min="0" step=".5" max="10" name="Surface" id="Surface" class="form-control" placeholder="10">
+        </div>
+        <div class="form-group">
+            <label for="Auto">Auto</label>
+            <input type="number" min="0" step=".5" max="10" name="Auto" id="Auto" class="form-control" placeholder="10">
+        </div>
+        <div class="form-group">
+            <label for="b_date">Buy Date</label>
+            <input type="date" name="b_date" id="b_date" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="b_price">Buy Price</label>
+            <input type="number" min="0.00" step="any" name="b_price" id="b_price" class="form-control" placeholder="77.07">
+        </div>
+        <div class="form-group">
+            <label for="b_fees">Buy Fees</label>
+            <input type="number" min="0.00" step="any" name="b_fees" id="b_fees" class="form-control" placeholder="3.47">
+        </div>
+        <div class="form-group">
+            <label for="b_ship">Buy Ship</label>
+            <input type="number" min="0.00" step="any" name="b_ship" id="b_ship" class="form-control" placeholder="3.50">
+        </div>
+        <div class="form-group">
+            <label for="s_date">Sell Date</label>
+            <input type="date" name="s_date" id="s_date" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="s_price">Sell Price</label>
+            <input type="number" min="0.00" step="any" name="s_price" id="s_price" class="form-control" placeholder="90.07">
+        </div>
+        <div class="form-group">
+            <label for="s_fees">Sell Fees</label>
+            <input type="number" min="0.00" step="any" name="s_fees" id="s_fees" class="form-control" placeholder="3.85">
+        </div>
+        <div class="form-group">
+            <label for="s_ship">Sell Ship</label>
+            <input type="number" min="0.00" step="any" name="s_ship" id="s_ship" class="form-control" placeholder="4.00">
+        </div>
+        <div class="form-group">
+            <label for="note">Notes</label>
+            <input type="text" name="note" id="note" class="form-control" placeholder="additional information goes here">
+        </div>
+    </table>
+        <button type="submit" value="Submit">Add Card</button>
+</form>

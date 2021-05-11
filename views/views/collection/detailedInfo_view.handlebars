@@ -1,0 +1,108 @@
+<p>all info about the card</p>
+
+<div>
+    <table>
+        {{#each card}}
+        <thead>
+            <th>Year</th>
+            <th>Brand</th>
+            <th>Series</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Location</th>
+            <th>Team</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{year}}</td>
+                <td>{{b_name}}</td>
+                <td>{{s_name}}</td>
+                <td>{{p_fName}}</td>
+                <td>{{p_lName}}</td>
+                <td>{{location}}</td>
+                <td>{{t_name}}</td>
+            </tr>
+        </tbody>
+        <thead>
+            <th>Features</th>
+            <th>Numbered</th>
+            <th>Out Of</th>
+            <th>Parallel</th>
+            <th>Effect</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{f_name}}</td>
+                <td>{{numbered}}</td>
+                <td>{{out_of}}</td>
+                <td>{{p_name}}</td>
+                <td>{{e_name}}</td>
+            </tr>
+        </tbody>
+        <thead>
+            <th>Grading Company</th>
+            <th>Slab Number</th>
+            <th>Overall Grade</th>
+            <th>Centering</th>
+            <th>Corners</th>
+            <th>Edges</th>
+            <th>Surface</th>
+            <th>Auto</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{g_name}}</td>
+                <td>{{slab_number}}</td>
+                <td>{{Overall_Grade}}</td>
+                <td>{{Centering}}</td>
+                <td>{{Corners}}</td>
+                <td>{{Edges}}</td>
+                <td>{{Surface}}</td>
+                <td>{{Auto}}</td>
+            </tr>
+        </tbody>
+        <thead>
+            <th>Buy Date</th>
+            <th>Buy Price</th>
+            <th>Buy Fees</th>
+            <th>Buy Ship</th>
+            <th>Sell Date</th>
+            <th>Sell Price</th>
+            <th>Sell Fees</th>
+            <th>Sell Ship</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{b_date}}</td>
+                <td>{{b_price}}</td>
+                <td>{{b_fees}}</td>
+                <td>{{b_ship}}</td>
+                <td>{{s_date}}</td>
+                <td>{{s_price}}</td>
+                <td>{{s_fees}}</td>
+                <td>{{s_ship}}</td>
+            </tr>
+        </tbody>
+        <thead>
+            <th>Notes</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{note}}</td>
+            </tr>
+        </tbody>
+        <tr>
+            <td>
+                <form action="/" method="post">
+                    <input type="hidden" name="cardID" id="cardID" value="{{cardID}}">
+                    <button type="submit" formaction="/detailedInfo_update">Update</button>
+                </form>
+                <form action="/" method="post">
+                    <input type="hidden" name="cardID" id="cardID" value="{{cardID}}">
+                    <button type="submit" formaction="/deleteCard">Delete</button>
+                </form>
+            </td>
+        </tr>
+            {{/each}}
+    </table>
+</div>
