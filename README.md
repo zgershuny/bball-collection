@@ -79,7 +79,7 @@ Next Steps
 Week 5 - Due 5/17/2021
 
 Items Completed
-  1. Display players and/or teams and their cards (no option for sold or unsold - see challenges) and their possible combinatiosn
+  1. Display players and/or teams and their cards (no option for sold or unsold - see challenges) and their possible combinatiosn. If not in system, direct to a new page to add a card
   2. render sold and unsold cards on collections and sales page
   3. Improved the database schema/tables to make adding a new card easier
   4. Added feature to add grading company, player, team, parallel, and effect
@@ -92,4 +92,5 @@ Challenges
 Next Steps
   1. Finish implementing adding a new card
   2. Delete values in for tables except Card (card is done)
-  3. Render the sales in the past month and week
+  3. add search by brand, series, parallel, effect, and grading
+  4. Render the sales in the past month and week
