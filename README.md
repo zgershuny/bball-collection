@@ -82,6 +82,7 @@ Items Completed
   1. Display players and/or teams and their cards (no option for sold or unsold - see challenges) and their possible combinatiosn
   2. render sold and unsold cards on collections and sales page
   3. Improved the database schema/tables to make adding a new card easier
+  4. Added feature to add grading company, player, team, parallel, and effect
 
 Challenges
   1. dynamic dropdown menu did not pass the value to render sold or unsold cards (i.e. I selected a player from the dropdown menu and then to see his sales, but the playerID wouldn't pass), led to a form and improved search with all the possible combinations of four fields (first name, last name, location, and team name)
@@ -90,6 +91,6 @@ Challenges
 
 Next Steps
   1. Finish implementing adding a new card
-  2. Finish implementing adding brand and series (and associate them), grading company, player, team, parallel, and effect
+  2. Finish implementing adding brand and series (and associate them)
   3. Delete values in for tables except Card (card is done)
   4. Render the sales in the past month and week
