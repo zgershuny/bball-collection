@@ -87,3 +87,9 @@ Challenges
   1. dynamic dropdown menu did not pass the value to render sold or unsold cards (i.e. I selected a player from the dropdown menu and then to see his sales, but the playerID wouldn't pass), led to a form and improved search with all the possible combinations of four fields (first name, last name, location, and team name)
   2. some entities/tables did not make sense when I was thinking about the logic of adding a card. Dim_Year was removed because that could go on a card and use DISTINCT SQL query and removed the associative entity for a M:M relationship (effect and parallel). Those two tables are still M:M through Fact_Card. Queries are updaated
   3. Some queries are extremely long for javascript files that make it difficult to read, but learned how to break them up with variables so it is easier to implement them. Moving forward, this method will be used. If time before class ends, this method will be implemented in the older files. See lookup.js as an example of utilizing the newer method.
+
+Next Steps
+  1. Finish implementing adding a new card
+  2. Finish implementing adding brand and series (and associate them), grading company, player, team, parallel, and effect
+  3. Delete values in for tables except Card (card is done)
+  4. Render the sales in the past month and week
