@@ -75,3 +75,15 @@ Next Steps
   2. Implement to display players' and their cards (option for sold or unsold)
   3. Implement to display teams' and their cards (option for sold and unsold)
   4. Implement a feature to render only sold and unsold cards (collection/sales page) 
+
+Week 5 - Due 5/17/2021
+
+Items Completed
+  1. Display players and/or teams and their cards (no option for sold or unsold - see challenges) and their possible combinatiosn
+  2. render sold and unsold cards on collections and sales page
+  3. Improved the database schema/tables to make adding a new card easier
+
+Challenges
+  1. dynamic dropdown menu did not pass the value to render sold or unsold cards (i.e. I selected a player from the dropdown menu and then to see his sales, but the playerID wouldn't pass), led to a form and improved search with all the possible combinations of four fields (first name, last name, location, and team name)
+  2. some entities/tables did not make sense when I was thinking about the logic of adding a card. Dim_Year was removed because that could go on a card and use DISTINCT SQL query and removed the associative entity for a M:M relationship (effect and parallel). Those two tables are still M:M through Fact_Card. Queries are updaated
+  3. Some queries are extremely long for javascript files that make it difficult to read, but learned how to break them up with variables so it is easier to implement them. Moving forward, this method will be used. If time before class ends, this method will be implemented in the older files. See lookup.js as an example of utilizing the newer method.
