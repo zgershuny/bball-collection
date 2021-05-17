@@ -91,6 +91,5 @@ Challenges
 
 Next Steps
   1. Finish implementing adding a new card
-  2. Finish implementing adding brand and series (and associate them)
-  3. Delete values in for tables except Card (card is done)
-  4. Render the sales in the past month and week
+  2. Delete values in for tables except Card (card is done)
+  3. Render the sales in the past month and week
