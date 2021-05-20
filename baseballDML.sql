@@ -316,11 +316,11 @@ FROM dim_series
 ORDER BY `s_name` ASC
 
 -- prepopulate brands and series
-SELECT dim_brand.brandID, dim_brand.b_name,
-dim_series.seriesID, dim_series.s_name, dim_series.yearID
+SELECT dim_brand.brandID, dim_series.seriesID, 
+CONCAT(dim_brand.b_name, ' ', dim_series.s_name) AS product
 FROM dim_series
 LEFT JOIN dim_brand ON dim_series.brandID=dim_brand.brandID
-ORDER BY `b_name` ASC
+ORDER BY `product` ASC
 
 -- prepopulate the identified features in the database
 SELECT *
