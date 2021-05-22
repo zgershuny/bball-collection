@@ -94,3 +94,8 @@ Next Steps
   2. Delete values in for tables except Card (card is done)
   3. add search by brand, series, parallel, effect, and grading
   4. Render the sales in the past month and week
+
+Week 6 - Due 5/25/2021
+
+Items Completed
+  1. added search by parallel, effect, and grading
