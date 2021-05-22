@@ -99,3 +99,4 @@ Week 6 - Due 5/25/2021
 
 Items Completed
   1. added search by brand, series, parallel, effect, and grading
+  2. delete values in all tables except Card (card is already done along with sales and slab)
