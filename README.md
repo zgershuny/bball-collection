@@ -98,4 +98,4 @@ Next Steps
 Week 6 - Due 5/25/2021
 
 Items Completed
-  1. added search by parallel, effect, and grading
+  1. added search by brand, series, parallel, effect, and grading
