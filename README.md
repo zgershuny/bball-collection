@@ -100,3 +100,14 @@ Week 6 - Due 5/25/2021
 Items Completed
   1. added search by brand, series, parallel, effect, and grading
   2. delete values in all tables except Card (card is already done along with sales and slab)
+  3. add a new card with sales
+  4. add the dropdown to render the sales in the past month, week, and year (not yet fully functional)
+
+Challenges
+  1. Need to insert a new card while inserting the saleID AND slabID. Broke it down so that the sale goes with card. Sale must always go with card. slab can be optional
+  2. will need to figure out how to implement to insert a new slab and associate it with the card (slabID would be null), perhaps an option on card's details section
+
+Next Steps
+  1. complete adding a new card with slab info
+  2. render the sales in the past week, month, and year
+  3. beautify the pages
