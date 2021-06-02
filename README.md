@@ -116,13 +116,14 @@ Week 7 - Due 6/2/2021
 
 Items Completed
   1. completed adding a new card with slab info
-  2. render the sales in the past week, month, year
-  3. beautify the pages
+  2. beautify the pages
 
 Challenges
   1. Had to break down the steps further when adding the slab to the card. Resolved this by doing it on the add-->info page.
   2. Had difficulty with CSS to to not render a 404 error but resolved this due to pathing issue
+  3. rendering the sales in the past year was working but now it isn't. The query works in the database
 
 Next Steps
   1. Continue to beautify the pages
   2. Continue to iron out obvious bugs that would impact user quality experience (i.e. drop down menus are not rendering after searching/adding info)
+  3. render the sales in the past week, month, year
